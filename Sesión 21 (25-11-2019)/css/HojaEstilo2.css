@@ -12,4 +12,46 @@ body {
   color: #bb3939;
 }
 
+.contenedor {
+  margin-top: 50px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid blue;
+  box-sizing: border-box;
+  display: flow-root;
+  /*A pesar de no darle una altura al contenedor, permite que éste se adecue a los elementos (flotantes) que contiene*/
+}
+
+article[role=main] {
+  float: left;
+  width: 62.5%;
+  min-height: 400px;
+  background-color: olive;
+}
+
+aside[role=complementary] {
+  float: right;
+  width: 37.5%;
+  min-height: 400px;
+  background-color: red;
+}
+
+/*Prueba de operadores*/
+h3 {
+  font-size: 10px;
+}
+
+h4 {
+  font-size: 4px;
+}
+
+h5 {
+  font-size: 4px;
+}
+
+h6 {
+  /*font-size:2px + 2em; Unidades incompatibles*/
+}
+
 /*# sourceMappingURL=hojaestilo2.css.map */
