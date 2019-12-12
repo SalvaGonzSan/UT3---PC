@@ -1,0 +1,71 @@
+%capahija {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 1.8rem;
+}
+
+%contenedor {
+  display: flex;
+  background-color: dodgerblue;
+  min-height: 500px;
+  flex-wrap: wrap;
+}
+
+.contenedorflex {
+  @extend %contenedor;
+  justify-content: center;
+  align-items: flex-start;
+  > div {
+    @extend %capahija;
+  }
+}
+
+.contenedorflexcentradoperfecto {
+  margin-top: 30px;
+  @extend %contenedor;
+  align-items: center;
+  justify-content: center;
+  > div {
+    @extend %capahija;
+  }
+}
+
+.contenedorflexaligncontent {
+  @extend %contenedor;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  > div {
+    @extend %capahija;
+  }
+}
+
+/*Ejemplo baseline. No optimizo código*/
+
+.contenedorflexbaseline { 
+    margin-top:40px;
+    display: flex; 
+  
+    height: 200px; 
+  
+    align-items: baseline; 
+  
+    background-color: DodgerBlue; 
+  
+  > div { 
+  
+    background-color: #f1f1f1; 
+  
+    width: 100px; 
+  
+    margin: 10px; 
+  
+    text-align: center; 
+  
+    line-height: 75px; 
+  
+    font-size: 30px; 
+  
+  } 
+}

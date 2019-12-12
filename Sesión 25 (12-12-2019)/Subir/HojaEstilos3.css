@@ -1,0 +1,9 @@
+@charset "UTF-8";
+/*Ejemplo 1: Cuando el ancho se mayor que 600px el color de fondo será verde.*/
+@media screen and (min-width: 600px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+/*# sourceMappingURL=hojaestilos3.css.map */
