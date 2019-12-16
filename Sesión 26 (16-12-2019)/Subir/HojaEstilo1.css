@@ -1,0 +1,66 @@
+@charset "UTF-8";
+.contenedorflex {
+  display: flex;
+  width: 500px;
+  background-color: dodgerblue;
+  padding: 20px;
+  min-height: 600px;
+}
+.contenedorflex > .elemento1 {
+  /*flex-basis: 200px;Si lo fijas a un ancho determinado, de ahí no va a decrecer. En cambio, sí va a permitir que crezca.*/
+  flex-basis: 200px;
+  flex-grow: 3;
+  background-color: #f1f1f1;
+}
+.contenedorflex > .elemento2 {
+  flex-basis: auto;
+  flex-grow: 2;
+  background-color: #f1f1f1;
+}
+.contenedorflex > .elemento3 {
+  flex-basis: auto;
+  flex-grow: 2;
+  background-color: #f1f1f1;
+}
+.contenedorflex > .elementohijo1 {
+  background-color: #f1f1f1;
+  padding: 10px;
+  align-self: flex-end;
+}
+.contenedorflex > .elementohijo2 {
+  background-color: #f1f1f1;
+  padding: 10px;
+  align-self: flex-start;
+}
+.contenedorflex > .elementohijo3 {
+  background-color: #f1f1f1;
+  padding: 10px;
+  align-self: center;
+}
+
+.contenedorflex2 {
+  display: flex;
+  background-color: dodgerblue;
+  padding: 20px;
+  flex-direction: row;
+}
+.contenedorflex2 > .elemento1 {
+  background-color: #f1f1f1;
+  padding: 10px;
+  display: flex;
+  /*No está heredando la propiedad flex de su contenedor*/
+}
+.contenedorflex2 > .elemento1 > .elemento11 {
+  background-color: pink;
+  padding: 10px;
+}
+.contenedorflex2 > .elemento1 > .elemento12 {
+  background-color: pink;
+  padding: 10px;
+}
+.contenedorflex2 > .elemento2 {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=HojaEstilo1.css.map */

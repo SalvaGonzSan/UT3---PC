@@ -1,0 +1,62 @@
+.contenedorflex {
+  display: flex;
+  width: 500px;
+  background-color: dodgerblue;
+  padding: 20px;
+  min-height: 600px;
+  > .elemento1 {
+    /*flex-basis: 200px;Si lo fijas a un ancho determinado, de ahí no va a decrecer. En cambio, sí va a permitir que crezca.*/
+    flex-basis: 200px;
+    flex-grow: 3;
+    background-color: #f1f1f1;
+  }
+  > .elemento2 {
+    flex-basis: auto;
+    flex-grow: 2;
+    background-color: #f1f1f1;
+  }
+  > .elemento3 {
+    flex-basis: auto;
+    flex-grow: 2;
+    background-color: #f1f1f1;
+  }
+  > .elementohijo1 {
+    background-color: #f1f1f1;
+    padding: 10px;
+    align-self: flex-end;
+  }
+  > .elementohijo2 {
+    background-color: #f1f1f1;
+    padding: 10px;
+    align-self: flex-start;
+  }
+  > .elementohijo3 {
+    background-color: #f1f1f1;
+    padding: 10px;
+    align-self: center;
+  }
+}
+
+.contenedorflex2 {
+  display: flex;
+  background-color: dodgerblue;
+  padding: 20px;
+  flex-direction: row;
+  > .elemento1 {
+    background-color: #f1f1f1;
+    padding: 10px;
+    display: flex; /*No está heredando la propiedad flex de su contenedor*/
+    > .elemento11 {
+      background-color: pink;
+      padding: 10px;
+    }
+    > .elemento12 {
+      background-color: pink;
+      padding: 10px;
+    }
+  }
+  > .elemento2 {
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+}
